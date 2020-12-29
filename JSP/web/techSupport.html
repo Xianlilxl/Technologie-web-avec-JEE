@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>TP3 JSP</title>
+    </head>
+
+    <body>
+        <h2> Demande du support technique </h2>
+        <form method="post" action="/JSP/TechSupport.jsp">
+            Email : <input type="text" name="email"><br />
+            Logiciel : 
+            <select name = "logiciel">
+                <option value ="word">Microsoft word</option>
+                <option value ="excel">Microsoft Excel</option>
+                <option value="ppt">Microsoft PowerPoint</option>
+            </select>
+
+            Système d'exploitation : 
+            <select name = "systemeExploitation">
+                <option value ="linux">Linux</option>
+                <option value ="win">Windows</option>
+                <option value="mac">MacOS</option>
+            </select><br />
+            Description du problème : <br />
+            <textarea rows="10" cols="30" name = "description"></textarea><br />
+            <input type="submit" value="Soumettre la requête"/>
+        </form>
+        
+    </body>
+</html>

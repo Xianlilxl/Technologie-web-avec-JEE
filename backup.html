@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>TP3 JSP</title>
+    </head>
+
+    <body>
+        <h2> Demande du support technique </h2>
+        Email : <input type="text" name="email"><br />
+        Logiciel : 
+        <select>
+            <option value ="volvo">Microsoft word</option>
+            <option value ="saab">Microsoft Excel</option>
+            <option value="opel">Microsoft PowerPoint</option>
+        </select>
+        
+        Système d'exploitation : 
+        <select>
+            <option value ="volvo">Linux</option>
+            <option value ="saab">Windows</option>
+            <option value="opel">MacOS</option>
+        </select><br />
+        Description du problème : <br />
+        <textarea rows="10" cols="30"></textarea><br />
+        <input type="submit" value="Soumettre la requête"/>
+    </body>
+</html>
+
+<%
+out.println("<h2>Email rentré est \"" + request.getParameter("email")+ "\"</h2>");
+%>
